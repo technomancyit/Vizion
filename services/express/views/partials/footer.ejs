@@ -1,0 +1,12 @@
+<!-- views/partials/footer.ejs -->
+
+    <div class="row">
+      <div class="col-md-6">
+          
+        <a data-toggle="popover" data-placement="top" title="Download Resume" data-content="<% resume.downloads.forEach(function(download) {  %> <%= download %> <% }); %>" class="btn btn-outline-light">
+          <i class="fas fa-cloud"></i> Download Resume
+        </a>
+      </div>
+    </div>
+    
+<p class="text-center text-muted">© Copyright 2017 TechnomancyIT</p>

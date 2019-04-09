@@ -1,0 +1,43 @@
+<!-- WORK  -->
+
+<div id="work" class="collapse container container-fill">
+  <div class="card card-body bg-<%- colors[2] %> text-white py-5 card-square">
+    <h2>
+      <%- work.title %>
+    </h2>
+    <p class="lead">
+      <%- work.paragraph %>
+    </p>
+  </div>
+  <div class="card card-body py-5">
+    <h3>
+      <%- work.workTitle %>
+    </h3>
+    <p>
+      <%- work.workParagraph %>
+    </p>
+    <div class="row no-gutters justify-content-md-center">
+      <% for(var i=0; i < work.works.length; i++) { %>
+      <div class="card col-md-3 mx-3 my-3 bg-<%- colors[2] %> mb-3">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="<%- work.works[i].img %>" alt="Card image cap">
+          <a>
+            <div class="mask rgba-blue-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+
+        <div class="card-header"><%- work.works[i].name %></div>
+        <div class="card-body white-text rounded-bottom">
+          <h5 class="card-title"><%- work.works[i].subName %></h5>
+          <p class="card-text text-white p-overflow"><%- work.works[i].paragraph %></p>
+        </div>
+
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

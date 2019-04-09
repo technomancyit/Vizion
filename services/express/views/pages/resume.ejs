@@ -1,0 +1,34 @@
+
+    <!-- RESUME-->
+    <div id="resume" class="collapse">
+
+        <div class="card card-body bg-<%- colors[1] %> text-white py-5 card-square">
+          <h2><%- resume.title %></h2>
+          <p class="lead"><%- resume.titleParagraph %></p>
+        </div>
+        <div class="card card-body py-5">
+          <h3><%- resume.resumeTitle %></h3>
+          <p><%- resume.resumeParagraph %></p>
+          <% for(var i=0; i < resume.resumes.length; i++) { %>
+          <div class="row pt-3">
+                <% for(var x=0; x < resume.resumes[i].length; x++) { %>
+            <div class="card col-lg-4 col-md-6 col-sm-12">
+              <div class="card-body">
+                <h4 class="card-title">Dev Maseters</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum consequuntur beatae?</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Full Stack Developer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Phone: (444) 444-4444
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2015 - 2018</h6>
+              </div>
+            </div>
+            <% } %>
+            </div>
+            <% } %>
+          </div>
+        </div>

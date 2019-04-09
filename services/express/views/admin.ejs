@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include ./partials/admin/head %>
+
+
+<body class="grey lighten-3">
+
+
+    <div @click="checkMenu" id="adminApp">
+
+        <% include ./partials/admin/header %>
+
+        <% include ./partials/admin/main %>
+        <% include ./elements/clickMenu %>
+        <% include ./modals/showTicket %>
+        <% include ./partials/admin/footer %>
+    </div>
+</body>
+
+
+<% include ./partials/admin/scripts %>
+<script>
+    $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+    })
+    $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+
+
+
+</html>

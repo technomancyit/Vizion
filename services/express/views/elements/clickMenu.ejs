@@ -1,0 +1,3 @@
+<div class="dropdown-menu dropdown-primary"  id="context-menu">
+<a v-for="menu in clickMenu" class="dropdown-item" @click="clickMenuFunction(menu.id, menu.key, 'message', menu.modal)" :data-id="menu.id" href="#">{{menu.name}}</a>
+</div>

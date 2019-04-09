@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ./partials/head %>
+</head>
+
+<body>
+    <div id="userHead" v-cloak>
+
+    </div>
+
+
+  <div id="userApp" class="container">
+
+      <% include ./partials/userHeader %>
+
+      <% include ./pages/home %>
+      <% include ./pages/contact %>
+      <% include ./pages/work %>
+      <% include ./pages/resume %>
+      <% include ./modals/userModal %>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white container">
+        <% include ./partials/footer %>
+      </footer>
+  </div>
+
+</html>
+    <% include ./partials/scripts %>
+    <script>
+      $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+      })
+      $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+      });
+  
+      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+      });
+  
+    </script>
+    
+</body>
+
+</html>
